@@ -8,7 +8,7 @@ def encode_user():
     :param user:
     :return:
     """
-    encoded_data = jwt.encode(payload={"name": "Alessandro","cognome": "Romani", "stocazzo": 1},
+    encoded_data = jwt.encode(payload={"name": "Alessandro","cognome": "Romani", "palazzo": 1},
                               key='bubu1aa',
                               algorithm="HS256")
     return encoded_data
