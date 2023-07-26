@@ -15,10 +15,11 @@ def encode_user():
     return encoded_data
 def request_bubu():
     r = requests.get('https://httpbin.org/basic-auth/user/pass', auth=('user', 'pass'))
-    return r.status_code
+    return r.text
+
 def post_bubu():
     data = '11okokok'
-    p = requests.post('https://httpbin.org/post',data)
+    p = requests.post('https://httpbin.org/post', data)
     return p.status_code
 
 if __name__ == "__main__":
